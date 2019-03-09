@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="eventsApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Homepage | Stephen Okpalaononuju</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Mali" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles/style1.css">
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
+
+</head>
+<body ng-controller="maincontroller">
+
+    <header class="home-header">
+        <div class="my-logo">
+            <img ng-src="{{event.logoImgUrl}}" alt="{{event.name}}" class="logo" />
+        </div>
+        <div class="screen-text">
+            <h1 class="my-name">
+                <span class="main-name">{{event.fullname}}</span>
+                <span class="name-title"><img ng-src="{{event.nigerianFlag}}" class="flag" alt="flag" /> {{event.subname}}<img ng-src="{{event.rastaFlag}}" class="flag" alt="flag" /></span>
+            </h1>
+        </div>
+        <div class="icons">
+                <a href="https://www.facebook.com/stephen.okpala.7" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                <a href="https://www.instagram.com/acedeywin" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.github.com/acedeywin" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://www.twitter.com/acedeywinn" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/stevon04" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <p class="w3-medium">&copy; &nbsp; Copyright &nbsp;<span >{{date| date:'yyyy'}}</span>. Created by <a href="#name">Me</a> for your Perusal</p>
+
+        </div>
+    </header>
+    <script src="../scripts/jquery-3.3.1.min.js"></script>
+    <script src="../scripts/angular/angular.js"></script>
+    <script src="../scripts/angular/angular-resource.js"></script>
+    <script src="../scripts/angular/angular-route.js"></script>
+    <script src="../scripts/web.js"></script>
+    <script src="../scripts/controllers/maincontroller.js"></script>
+    <script src="../scripts/controllers/maindata.js"></script>
+
+
+
+</body>
+</html>
