@@ -1,0 +1,10 @@
+
+.about-text {background-color: rgba($color-tertiary, 0.7); margin-top: 1rem; padding: 1.8rem; color: $color-secondary-light; font-size: 1.63rem; font-weight: 500; border-radius: 0.8rem; transition: transform .3s; box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+
+    &:hover {transform: translateY(-1.5rem) scale(0.99);}
+}
+
+#profile1 {margin-bottom: 2rem;}
+#profile2 {margin-bottom: 2rem;}
+
+.move-in-bottom {animation: $animation-bottom}

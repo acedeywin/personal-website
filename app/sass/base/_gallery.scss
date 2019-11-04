@@ -1,0 +1,36 @@
+
+.image-clip {--webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%); clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%); }
+
+.cover {background-color: $color-primary}
+
+.general {margin-top: -5.5rem;}
+
+.heading-general {font-size: 3.5rem; text-transform: uppercase; font-weight: 700; display: inline-block; color: $color-primary; background-clip: text;  letter-spacing: .2rem; transition: all 2s; margin-top: 5rem; animation: $animation-top; animation-fill-mode: backwards;  
+
+    &:hover {transform: skewY(4deg) skewX(15deg) scale(1.2); text-shadow: .5rem 1rem 2rem, $color-black}
+
+}
+.center {text-align: center}
+.move-in-left {animation: $animation-right}
+.move-in-right {animation: $animation-left}
+
+
+.heading-picture {font-size: 2.5rem; font-weight: 700; text-transform: uppercase; margin-top: 3.5rem; color: $color-primary}
+
+.photo {position: relative;
+    &__design {width: 40%; height: 20rem; box-shadow: 0 1.5rem 4rem rgba($color-black, .4); border-radius: .2rem; position: absolute; margin-top: 5rem; z-index: 10; transition: all .2s; outline-offset: 1rem; border: .2rem $color-tertiary solid;
+    
+        &--p2 {left: 30%; top: -2rem}
+        &--p3 {left: 5; top: 1rem}
+        &--p4 {left: 15%; top: 12rem}
+        &--p5 {left: 50%; top: 4rem}
+        &--p6 {left: -10%; top: 8rem}
+        &--p7 {left: 40%; top: 9.3rem}
+
+        &:hover{outline: 1.5rem solid $color-tertiary; transform: scale(1.05) translateY(-.5rem); box-shadow: 0 2.5rem 4rem rgba($color-black, .5); z-index: 20; cursor: pointer}
+
+    }
+    &:hover &__design:not(:hover) {transform: scale(.95)}
+}
+
+

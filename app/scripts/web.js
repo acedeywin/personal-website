@@ -8,5 +8,21 @@ eventsApp.config(function($routeProvider){
             templateUrl: 'homepage.html',
             controller: 'maincontroller'
         })
+        .when('/gallery',{
+            templateUrl: 'gallery.html',
+            controller: 'maincontroller'
+        })
+        .when('/about',{
+            templateUrl: 'about.html',
+            controller: 'maincontroller'
+        })
+        .when('/portfolio',{
+            templateUrl: 'portfolio.html',
+            controller: 'maincontroller'
+        })
+        .when('/contact',{
+            templateUrl: 'contact.html',
+            controller: 'maincontroller'
+        })
         .otherwise({redirectTo: '/homepage'})
 })

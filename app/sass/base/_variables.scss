@@ -1,0 +1,31 @@
+//custom colors
+$color-primary-light: #484888;
+$color-primary: #000080;
+
+$color-secondary-dark: rgb(128, 128, 128);
+$color-secondary-light: rgb(242, 242, 242);
+
+$color-tertiary-light: rgb(136, 60, 90);
+$color-tertiary: rgb(128, 0, 51);
+
+$color-black: rgb(0, 0, 0);
+
+//grid size
+$grid-width: 114rem;
+$gutter-vertical:8rem;
+$gutter-horizontal:6rem;
+
+//mixins
+@mixin clearfix {
+    &::after {content: ""; display: table; clear: both;}
+}
+
+//font size
+$default-font-size: 1.7rem;
+
+//animations
+$animation-left: moveInLeft 2s ease-out; 
+$animation-right: moveInRight 2s ease-out;
+$animation-rotate: moveInRotate 2s ease-out;
+$animation-top: moveInTop 2s ease-out;
+$animation-bottom: moveInBottom 2s ease-out;
