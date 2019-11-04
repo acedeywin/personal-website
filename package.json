@@ -2,11 +2,14 @@
   "name": "website",
   "version": "1.0.0",
   "description": "my personal website",
-  "main": "app.js",
+  "main": "web-server/app.js",
   "scripts": {
     "compile:sass": "node-sass sass/style.scss css/style.css"
   },
-  "author": "me",
+  "keywords": [
+    "heroku"
+  ],
+  "author": "acedeywin",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -24,5 +27,8 @@
     "gulp-sourcemaps": "^2.6.5",
     "live-server": "^1.2.1",
     "node-sass": "^4.11.0"
+  },
+  "engines": {
+    "node": "10.15.3"
   }
 }

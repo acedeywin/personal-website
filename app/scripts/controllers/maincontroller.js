@@ -123,7 +123,7 @@ eventsApp.controller('maincontroller',
                 picture: '/img/portfolio/new-website.jpg',
                 note: 'Well, you are already here. Just make sure you navigate the site enough time to allow you view all the awesome stuff that I have done. Enjoy!',
                 ui: '#',
-                repo: 'https://github.com/acedeywin/new-website'
+                repo: 'https://github.com/acedeywin/personal-website'
             },
             {
                 header:'Todo-list App',
