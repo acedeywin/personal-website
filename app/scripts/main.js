@@ -1,6 +1,3 @@
-const menu = document.querySelector('.menu'),
-			  hidePics = document.querySelector('.show-pics'),
-			  overlay = document.querySelector('.overlay');
 
 	const myMenu = () => {	
 		const menu = document.querySelector('.menu'),
@@ -14,7 +11,7 @@ const menu = document.querySelector('.menu'),
 
 	  const myNav = () => {
 		const menu = document.querySelector('.menu');	
-		  menu.classList.remove('active');
+		menu.classList.remove('active');
 
 	  };
 
