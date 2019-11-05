@@ -6,21 +6,21 @@
             <a href="#homepage"><img ng-src="{{event.logoImgUrl}}" alt="{{event.name}}" class="header__logo"/></a>
         </div>
 
-         <!--Navbar starts here-->
+    <!--Navbar starts here-->
     <div class="navigation">
-        <div class="menu">
-          <span class="bar"></span>
-        </div>
-  
-        <nav class="nav">         
-          <div class="overlay"> 
-            <ul>
-                <li ng-repeat="item in navBar"><a ng-href="{{item.link}}" ng-class="item.class" ng-bind="item.title" target="{{item.target}}"></a></li>
-            </ul>
-          </div> 
-        </nav> 
+      <div class="menu" onclick="myMenu()">
+        <span class="bar"></span>
       </div>
-      <!--Navbar ends here-->
+
+      <nav class="nav" onclick="myNav()">         
+        <div class="overlay"> 
+          <ul>
+              <li ng-repeat="item in navBar"><a ng-href="{{item.link}}" ng-class="item.class" onclick="myLink()" ng-bind="item.title" target="{{item.target}}"></a></li>
+          </ul>
+        </div> 
+      </nav> 
+    </div>
+    <!--Navbar ends here--> 
   
           <section class="general">
             <div class="center">
@@ -134,3 +134,4 @@
   
     </div>
   </div>
+  

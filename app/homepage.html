@@ -7,14 +7,14 @@
         
     <!--Navbar starts here-->
     <div class="navigation">
-        <div class="menu">
+        <div class="menu" onclick="myMenu()">
           <span class="bar"></span>
         </div>
   
-        <nav class="nav">         
+        <nav class="nav" onclick="myNav()">         
           <div class="overlay"> 
             <ul>
-                <li ng-repeat="item in navBar"><a ng-href="{{item.link}}" ng-class="item.class" ng-bind="item.title" target="{{item.target}}"></a></li>
+                <li ng-repeat="item in navBar"><a ng-href="{{item.link}}" ng-class="item.class" onclick="myLink()" ng-bind="item.title" target="{{item.target}}"></a></li>
             </ul>
           </div> 
         </nav> 

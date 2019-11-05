@@ -3,3 +3,4 @@ node_modules
 app/debug.log
 app/archives/
 web-server/npm-debug.log
+debug.log

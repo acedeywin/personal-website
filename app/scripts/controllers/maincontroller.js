@@ -122,7 +122,7 @@ eventsApp.controller('maincontroller',
                 tech4: 'AngularJS | SCSS',
                 picture: '/img/portfolio/new-website.jpg',
                 note: 'Well, you are already here. Just make sure you navigate the site enough time to allow you view all the awesome stuff that I have done. Enjoy!',
-                ui: '#',
+                ui: ' https://salty-refuge-65598.herokuapp.com/',
                 repo: 'https://github.com/acedeywin/personal-website'
             },
             {
