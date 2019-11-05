@@ -28,8 +28,7 @@ eventsApp.controller('maincontroller',
             {
                 title: 'Curriculum Vitae',
                 link: 'http://acedeywin.github.io/my-cv',
-                class: 'navigation__link link user-acct',
-                target: '_blank'
+                class: 'navigation__link link user-acct'
             },
             {
                 title: 'Porfolio',
