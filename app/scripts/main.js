@@ -6,13 +6,12 @@
 			
 		menu.classList.toggle('active');
 		overlay.classList.toggle('menu-open');
-		hidePics.classList.toggle('hide');
+		hidePics.classList.toggle('hide')
 	  };
 
 	  const myNav = () => {
 		const menu = document.querySelector('.menu');	
 		menu.classList.remove('active');
-
 	  };
 
 	  const myLink = () => {

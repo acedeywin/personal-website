@@ -55,6 +55,7 @@
 
 .icon {color: $color-primary; text-align: center; font-size: 2rem; font-weight: 400;
 
+    @include respond(tab-port){margin-top: 8rem}
 }
 
 .card-margin {margin-bottom: 10rem;}

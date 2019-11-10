@@ -1,0 +1,25 @@
+@keyframes moveInRight{
+    0% {opacity: 0; transform: translateX(-10rem)}
+    80% {transform: translateX(1rem)}
+    100% {opacity: 1; transform: translate(0)}
+}
+@keyframes moveInLeft {
+    0% {opacity: 0; transform: translateX(10rem)}
+    80% {transform: translateX(-1rem)}
+    100% {opacity: 1; transform: translate(0)}
+}
+@keyframes moveInRotate {
+    0% {opacity: 0; transform: translateX(10rem) rotate(0deg)}
+    60% {transform: rotate(180deg)}
+    80% {transform: translateX(-1rem) rotate(180deg)}
+    100% {opacity: 1; transform: translate(0) rotate(180deg)}
+}
+@keyframes moveInTop{
+    0% {opacity: 0; transform: translateY(-5rem)}
+    100% {opacity: 1; transform: translate(0)}
+}
+@keyframes moveInBottom{
+    0% {opacity: 0; transform: translateY(5rem)}
+    100% {opacity: 1; transform: translate(0)}
+}
+

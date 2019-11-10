@@ -1,7 +1,25 @@
 /*font-family: 'Indie Flower', cursive; font-family: 'Mali', cursive; 'Gloria Hallelujah', cursive*/ 
 
 *, *::after, *::before {margin: 0; padding: 0; box-sizing: inherit}
-html {font-size: 62.5%;}
+
+html {font-size: 62.5%;
+
+    // @include respond(phone) {
+    //     font-size: 50%;
+    // }
+
+    @include respond(tab-land){
+        font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25%
+    }
+
+    @include respond(tab-port){
+        font-size: 50%; //1rem = 8px
+    }
+
+    @include respond(big-desktop){
+        font-size: 75%; //1rem = 12px
+    }
+}
 
 a {color: $color-primary}
 a:hover {color: rgb(242, 242, 242)}
@@ -20,37 +38,24 @@ body {font-family: 'Indie Flower', cursive; font-weight: 400; /*font-size: 16px;
 
 .icons {color: $color-primary; position: absolute; top: 80%; left: 20%; transform: translate(50%, 50%); text-align: center; font-size: 2rem; font-weight: 400;
 
+    @include respond(tab-port){left: 13%;}
+    @include respond(phone){left: -6%;}
+
     &__margin {margin-top: -8px;}
 }
 
-.name {color: $color-primary; text-transform: uppercase; backface-visibility: hidden;
+.name {color: $color-primary; text-transform: uppercase; backface-visibility: hidden; text-align: center;
 
-    &--main {display: block; font-size: 5rem; font-weight: 400; animation: $animation-rotate}
-    &--sub {display: block; font-size: $default-font-size; font-weight: 700; letter-spacing: .68rem; animation: $animation-right}
-}
+    // @include respond(tab-port){margin-left: 0rem;}
 
-@keyframes moveInRight{
-    0% {opacity: 0; transform: translateX(-10rem)}
-    80% {transform: translateX(1rem)}
-    100% {opacity: 1; transform: translate(0)}
-}
-@keyframes moveInLeft {
-    0% {opacity: 0; transform: translateX(10rem)}
-    80% {transform: translateX(-1rem)}
-    100% {opacity: 1; transform: translate(0)}
-}
-@keyframes moveInRotate {
-    0% {opacity: 0; transform: translateX(10rem) rotate(0deg)}
-    60% {transform: rotate(180deg)}
-    80% {transform: translateX(-1rem) rotate(180deg)}
-    100% {opacity: 1; transform: translate(0) rotate(180deg)}
-}
-@keyframes moveInTop{
-    0% {opacity: 0; transform: translateY(-5rem)}
-    100% {opacity: 1; transform: translate(0)}
-}
-@keyframes moveInBottom{
-    0% {opacity: 0; transform: translateY(5rem)}
-    100% {opacity: 1; transform: translate(0)}
+    &--main {display: block; font-size: 5rem; font-weight: 400; animation: $animation-rotate;
+
+        @include respond(phone){font-size: 3.2rem;}
+    
+    }
+    &--sub {display: block; font-size: $default-font-size; font-weight: 700; letter-spacing: .68rem; animation: $animation-right; 
+
+        @include respond(phone){font-size: 1rem; letter-spacing: .43rem;}
+    }
 }
 

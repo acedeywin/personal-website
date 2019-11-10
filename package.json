@@ -13,11 +13,13 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "browserslist": "^4.7.2",
+    "caniuse-lite": "^1.0.30001008",
     "express": "^4.16.4"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.10",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.7",
     "gulp": "^4.0.0",
     "gulp-clean-css": "^4.0.0",
     "gulp-cli": "^2.0.1",
