@@ -207,6 +207,29 @@ eventsApp.controller('maincontroller',
                 repo: 'https://github.com/acedeywin/td-page'
             }
         ];
+
+        $scope.footer = [
+            {
+                link: 'https://www.facebook.com/stephen.okpala.04',
+                class: 'fa fa-facebook-official'
+            },
+            {
+                link: 'https://www.instagram.com/acedeywin',
+                class: 'fa fa-instagram'
+            },
+            {
+                link: 'https://www.github.com/acedeywin',
+                class: 'fa fa-github'
+            },
+            {
+                link: 'https://www.twitter.com/acedeywinn',
+                class: 'fa fa-twitter'
+            },
+            {
+                link: 'https://www.linkedin.com/in/stevon04',
+                class: 'fa fa-linkedin'
+            }
+        ];
     }    
 );
 
