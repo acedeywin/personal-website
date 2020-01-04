@@ -8,6 +8,7 @@ eventsApp.controller('maincontroller',
             fullname: 'Okpalaononuju Stephen Ifeamarame',
             subname: 'Nigerian | Designer | Developer | True Africa Believer',
             logoImgUrl: '/img/others/web-logo.png',
+            miniLogo: '/img/others/favicon.png',
             nigerianFlag: '/img/others/naija.gif',
             rastaFlag: '/img/others/rasta.png',
         };
@@ -91,7 +92,7 @@ eventsApp.controller('maincontroller',
         $scope.about = {
             name: 'About',
 
-            profile1: 'Stephen holds a Bachelor of Science degree in Psychology from Nnamdi Azikiwe University, Awka and a Masters degree in Development Studies from Federal University, Dustin-ma, with two years of work experience as a Research Assistant where he supported research, project planning & implementation, monitoring & evaluation, office administration, logistics, and coordinated with multiple stakeholders to meet project/grant objectives. Before his engagement with the Institute, he was involved in Training/Research & Development in a technology firm where he brought innovative ideas and researched on contemporary technologies that helped develop the organization. He is also into app design & development where he hopes to positively enhance people’s experience online and make the web a better place.',
+            profile1: 'Stephen holds a bachelor of science degree in psychology from Nnamdi Azikiwe University, Awka and a masters degree in development studies from Federal University Dustin-ma, with three years of work experience in app design & development where he hopes to positively enhance people’s experience online and make the web a better place. He also has two years experience as a research assistant where he supported research, project planning & implementation, monitoring & evaluation, office administration, logistics, and coordinated with multiple stakeholders to meet project/grant objectives. Before his engagement with the Institute, he was involved in training/research & development in a technology firm where he brought innovative ideas and researched on contemporary technologies that helped develop the organization.',
 
             profile2: 'Stephen is gifted in being analytical, investigative and questioning. He loves to analyze and investigate, exploring data and information. He can quickly identify the key points, even in the most complex scenarios, offer others insight and clarity, and uses his strength to simplify and solve complex problems. Stephen is also gifted in being driven, determined and ambitious. He is a driven individual with limitless motivation, always focused on achieving his goals, and consistently delivers great work, regardless of the pressure.',
 
@@ -121,7 +122,7 @@ eventsApp.controller('maincontroller',
                 tech4: 'AngularJS | SASS',
                 picture: '/img/portfolio/new-website.jpg',
                 note: 'Well, you are already here. Just make sure you navigate the site enough time to allow you view all the awesome stuff that I have done. Enjoy!',
-                ui: ' https://salty-refuge-65598.herokuapp.com/',
+                ui: 'https://salty-refuge-65598.herokuapp.com/',
                 repo: 'https://github.com/acedeywin/personal-website'
             },
             {

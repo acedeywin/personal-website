@@ -19,26 +19,21 @@
 		overlay.classList.remove('menu-open');
 	  };
 
-// $(() => {
 
-// 	const $hidePics = $('.show-pics');
 
-// 	$('.green-bg').css('background-color', 'rgb(128, 0, 51)');
-	
-//     //Hidden navigation toggle functionalities
-// 	$('.menu').click(() => {
-// 		$('.menu').toggleClass('active');
-// 		$('.overlay').toggleClass('menu-open');
-// 		$hidePics.toggleClass('hide');
-// 	});
 
-// 	$('.nav .link').click(() => {
-// 		$('.menu').removeClass('active');
-// 		$('.overlay').removeClass('menu-open');
-// 		$hidePics.show();
-// 	});
+$(() => {
 
-// });  
+	$(window).resize(function () {
+		var viewportWidth = $(window).width();
+		if (viewportWidth < 500) {
+				$(".view").removeClass("header").addClass("portfolio");
+		}else{
+			$(".view").removeClass("portfolio").addClass("header");
+		}
+	});
+
+});  
 
 
 

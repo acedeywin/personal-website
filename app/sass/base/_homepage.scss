@@ -31,8 +31,13 @@ body {font-family: 'Indie Flower', cursive; font-weight: 400; /*font-size: 16px;
 
 .header {height: 100vh; background-image: linear-gradient(to left bottom, rgba($color-secondary-dark, 0.7), rgba($color-secondary-light, 0.7)), url(../img/old/steve.jpg); background-size: cover; background-position: center; position: relative;
 
+    @include respond(tab-land){height: 189vh;}
+
     &__my-logo {position: absolute; top: -5rem; left: 4rem;}
-    &__logo {height: 20rem;}
+    &__logo {height: 20rem;
+
+        @include respond(phone){height: 15rem;}
+    }
     &__screen-text {position: absolute; top: 40%; left: 20%; transform: translate(-5%, -10%)}
 }
 
@@ -41,7 +46,7 @@ body {font-family: 'Indie Flower', cursive; font-weight: 400; /*font-size: 16px;
     @include respond(tab-port){left: 13%;}
     @include respond(phone){left: -6%;}
 
-    @include respond(small-phone){display: none;}
+    @include respond(mid-phone){display: none;}
 
     &__margin {margin-top: -8px;}
 
