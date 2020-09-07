@@ -1,12 +1,15 @@
-
 <div class="cover">
-    <div class="view header">
-  
-        <div class="header__my-logo main">
-            <a href="#homepage"><img ng-src="{{event.logoImgUrl}}" alt="{{event.name}}" class="header__logo"/></a>
-        </div>
+  <div class="view header">
+    <div class="header__my-logo main">
+      <a href="homepage"
+        ><img
+          ng-src="{{event.logoImgUrl}}"
+          alt="{{event.name}}"
+          class="header__logo"
+      /></a>
+    </div>
 
-        <!-- <div class="header__my-logo mini">
+    <!-- <div class="header__my-logo mini">
           <a href="#homepage"><img ng-src="{{event.miniLogo}}" alt="{{event.name}}" class="header__logo--mini"/></a>
       </div> -->
 
@@ -16,36 +19,52 @@
         <span class="bar"></span>
       </div>
 
-      <nav class="nav" onclick="myNav()">         
-        <div class="overlay"> 
+      <nav class="nav" onclick="myNav()">
+        <div class="overlay">
           <ul>
-              <li ng-repeat="item in navBar"><a ng-href="{{item.link}}" ng-class="item.class" onclick="myLink()" ng-bind="item.title" target="{{item.target}}"></a></li>
+            <li ng-repeat="item in navBar">
+              <a
+                ng-href="{{item.link}}"
+                ng-class="item.class"
+                onclick="myLink()"
+                ng-bind="item.title"
+                target="{{item.target}}"
+              ></a>
+            </li>
           </ul>
-        </div> 
-      </nav> 
-    </div>
-    <!--Navbar ends here--> 
-  
-          <section class="general">
-            <div class="center">
-              <h2 class="heading-general">{{about.name}}</h2>
-            </div>
-  
-            <div class="about">
-               <div class="about-text move-in-bottom">
-                <p id="profile1">{{about.profile1}}</p>
-                
-                <p id="profile2">{{about.profile2}}</p>
-                
-                <p id="profile3">{{about.profile3}}</p>
-               </div>
-            </div>
-          </section>
-  
-         <div class="icon" >
-          <a class="icons__fav" ng-repeat="item in footer" ng-href="{{item.link}}" target="_blank"><i ng-class="item.class"></i></a>
-          <p>&copy; Copyright <span >{{date | date:'yyyy'}}</span>. Created by <a href="#name">Me</a> for your Perusal</p>
         </div>
-  
+      </nav>
+    </div>
+    <!--Navbar ends here-->
+
+    <section class="general">
+      <div class="center">
+        <h2 class="heading-general">{{about.name}}</h2>
+      </div>
+
+      <div class="about">
+        <div class="about-text move-in-bottom">
+          <p id="profile1">{{about.profile1}}</p>
+
+          <p id="profile2">{{about.profile2}}</p>
+
+          <p id="profile3">{{about.profile3}}</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="icon">
+      <a
+        class="icons__fav"
+        ng-repeat="item in footer"
+        ng-href="{{item.link}}"
+        target="_blank"
+        ><i ng-class="item.class"></i
+      ></a>
+      <p>
+        &copy; Copyright <span>{{date | date:'yyyy'}}</span>. Created by
+        <a href="#name">Me</a> for your Perusal
+      </p>
     </div>
   </div>
+</div>

@@ -1,10 +1,13 @@
-
 <div class="cover">
-    <div class="portfolio">
-  
-        <div class="header__my-logo">
-            <a href="#homepage"><img ng-src="{{event.logoImgUrl}}" alt="{{event.name}}" class="header__logo"/></a>
-        </div>
+  <div class="portfolio">
+    <div class="header__my-logo">
+      <a href="homepage"
+        ><img
+          ng-src="{{event.logoImgUrl}}"
+          alt="{{event.name}}"
+          class="header__logo"
+      /></a>
+    </div>
 
     <!--Navbar starts here-->
     <div class="navigation">
@@ -12,122 +15,188 @@
         <span class="bar"></span>
       </div>
 
-      <nav class="nav" onclick="myNav()">         
-        <div class="overlay"> 
+      <nav class="nav" onclick="myNav()">
+        <div class="overlay">
           <ul>
-              <li ng-repeat="item in navBar"><a ng-href="{{item.link}}" ng-class="item.class" onclick="myLink()" ng-bind="item.title" target="{{item.target}}"></a></li>
+            <li ng-repeat="item in navBar">
+              <a
+                ng-href="{{item.link}}"
+                ng-class="item.class"
+                onclick="myLink()"
+                ng-bind="item.title"
+                target="{{item.target}}"
+              ></a>
+            </li>
           </ul>
-        </div> 
-      </nav> 
+        </div>
+      </nav>
     </div>
-    <!--Navbar ends here--> 
-  
-          <section class="general">
-            <div class="center">
-              <h2 class="heading-general">{{portfolioName}}</h2>
-            </div>
-            
-            <!-- first row starts here-->
-            <div class="row">
-                <div ng-repeat="item in firstRow" class="col-1-of-3">
-                    <div class="card">
-                        <div class="card__side card__side--front">
-                          <img class="card__picture" ng-src="{{item.picture}}" alt="Image">  
-                          <h4 class="card__heading">
-                            <span ng-bind="item.header" class="card__heading-span card__heading-span--1"></span>
-                          </h4>
-                          <div class="card__details">
-                            <ul>
-                              <li ng-bind="item.tech1"></li>
-                              <li ng-bind="item.tech2"></li>
-                              <li ng-bind="item.tech3"></li>
-                              <li ng-bind="item.tech4"></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="card__side card__side--back card__side--back-1">
-                            <div class="card__cta">
-                              <div class="card__note-box">
-                                <p class="card__note-info" ng-bind="item.note"></p>
-                              </div>
-                              <a href="{{item.ui}}" class="btn btn--white card__ui" target="blank">View UI</a>
-                              <a href="{{item.repo}}" class="btn btn--white card__ui" target="blank">View Repo</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- first row ends here -->
+    <!--Navbar ends here-->
 
-             <!-- second row starts here-->
-             <div class="row">
-              <div ng-repeat="item in secondRow" class="col-1-of-3">
-                  <div class="card">
-                      <div class="card__side card__side--front">
-                        <img class="card__picture" ng-src="{{item.picture}}" alt="Image">  
-                        <h4 class="card__heading">
-                          <span ng-bind="item.header" class="card__heading-span card__heading-span--1"></span>
-                        </h4>
-                        <div class="card__details">
-                          <ul>
-                            <li ng-bind="item.tech1"></li>
-                            <li ng-bind="item.tech2"></li>
-                            <li ng-bind="item.tech3"></li>
-                            <li ng-bind="item.tech4"></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="card__side card__side--back card__side--back-1">
-                          <div class="card__cta">
-                            <div class="card__note-box">
-                              <p class="card__note-info" ng-bind="item.note"></p>
-                            </div>
-                            <a href="{{item.ui}}" class="btn btn--white card__ui" target="blank">View UI</a>
-                            <a href="{{item.repo}}" class="btn btn--white card__ui" target="blank">View Repo</a>
-                          </div>
-                      </div>
-                  </div>
+    <section class="general">
+      <div class="center">
+        <h2 class="heading-general">{{portfolioName}}</h2>
+      </div>
+
+      <!-- first row starts here-->
+      <div class="row">
+        <div ng-repeat="item in firstRow" class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <img
+                class="card__picture"
+                ng-src="{{item.picture}}"
+                alt="Image"
+              />
+              <h4 class="card__heading">
+                <span
+                  ng-bind="item.header"
+                  class="card__heading-span card__heading-span--1"
+                ></span>
+              </h4>
+              <div class="card__details">
+                <ul>
+                  <li ng-bind="item.tech1"></li>
+                  <li ng-bind="item.tech2"></li>
+                  <li ng-bind="item.tech3"></li>
+                  <li ng-bind="item.tech4"></li>
+                </ul>
               </div>
-          </div>
-          <!-- second row ends here -->
-
-           <!-- third row starts here-->
-           <div class="row">
-            <div ng-repeat="item in thirdRow" class="col-1-of-3">
-                <div class="card ">
-                    <div class="card__side card__side--front">
-                      <img class="card__picture" ng-src="{{item.picture}}" alt="Image">  
-                      <h4 class="card__heading">
-                        <span ng-bind="item.header" class="card__heading-span card__heading-span--1"></span>
-                      </h4>
-                      <div class="card__details">
-                        <ul>
-                          <li ng-bind="item.tech1"></li>
-                          <li ng-bind="item.tech2"></li>
-                          <li ng-bind="item.tech3"></li>
-                          <li ng-bind="item.tech4"></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="card__side card__side--back card__side--back-1">
-                        <div class="card__cta">
-                          <div class="card__note-box">
-                            <p class="card__note-info" ng-bind="item.note"></p>
-                          </div>
-                          <a href="{{item.ui}}" class="btn btn--white card__ui" target="blank">View UI</a>
-                          <a href="{{item.repo}}" class="btn btn--white card__ui" target="blank">View Repo</a>
-                        </div>
-                    </div>
-                </div>
             </div>
+            <div class="card__side card__side--back card__side--back-1">
+              <div class="card__cta">
+                <div class="card__note-box">
+                  <p class="card__note-info" ng-bind="item.note"></p>
+                </div>
+                <a
+                  href="{{item.ui}}"
+                  class="btn btn--white card__ui"
+                  target="blank"
+                  >View UI</a
+                >
+                <a
+                  href="{{item.repo}}"
+                  class="btn btn--white card__ui"
+                  target="blank"
+                  >View Repo</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- third row ends here -->
-        <div class="icon" >
-          <a class="icons__fav" ng-repeat="item in footer" ng-href="{{item.link}}" target="_blank"><i ng-class="item.class"></i></a>
-          <p>&copy; Copyright <span >{{date | date:'yyyy'}}</span>. Created by <a href="#name">Me</a> for your Perusal</p>
+      </div>
+      <!-- first row ends here -->
+
+      <!-- second row starts here-->
+      <div class="row">
+        <div ng-repeat="item in secondRow" class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <img
+                class="card__picture"
+                ng-src="{{item.picture}}"
+                alt="Image"
+              />
+              <h4 class="card__heading">
+                <span
+                  ng-bind="item.header"
+                  class="card__heading-span card__heading-span--1"
+                ></span>
+              </h4>
+              <div class="card__details">
+                <ul>
+                  <li ng-bind="item.tech1"></li>
+                  <li ng-bind="item.tech2"></li>
+                  <li ng-bind="item.tech3"></li>
+                  <li ng-bind="item.tech4"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-1">
+              <div class="card__cta">
+                <div class="card__note-box">
+                  <p class="card__note-info" ng-bind="item.note"></p>
+                </div>
+                <a
+                  href="{{item.ui}}"
+                  class="btn btn--white card__ui"
+                  target="blank"
+                  >View UI</a
+                >
+                <a
+                  href="{{item.repo}}"
+                  class="btn btn--white card__ui"
+                  target="blank"
+                  >View Repo</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-          </section>
-  
-    </div>
+      </div>
+      <!-- second row ends here -->
+
+      <!-- third row starts here-->
+      <div class="row">
+        <div ng-repeat="item in thirdRow" class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <img
+                class="card__picture"
+                ng-src="{{item.picture}}"
+                alt="Image"
+              />
+              <h4 class="card__heading">
+                <span
+                  ng-bind="item.header"
+                  class="card__heading-span card__heading-span--1"
+                ></span>
+              </h4>
+              <div class="card__details">
+                <ul>
+                  <li ng-bind="item.tech1"></li>
+                  <li ng-bind="item.tech2"></li>
+                  <li ng-bind="item.tech3"></li>
+                  <li ng-bind="item.tech4"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-1">
+              <div class="card__cta">
+                <div class="card__note-box">
+                  <p class="card__note-info" ng-bind="item.note"></p>
+                </div>
+                <a
+                  href="{{item.ui}}"
+                  class="btn btn--white card__ui"
+                  target="blank"
+                  >View UI</a
+                >
+                <a
+                  href="{{item.repo}}"
+                  class="btn btn--white card__ui"
+                  target="blank"
+                  >View Repo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- third row ends here -->
+      <div class="icon">
+        <a
+          class="icons__fav"
+          ng-repeat="item in footer"
+          ng-href="{{item.link}}"
+          target="_blank"
+          ><i ng-class="item.class"></i
+        ></a>
+        <p>
+          &copy; Copyright <span>{{date | date:'yyyy'}}</span>. Created by
+          <a href="#name">Me</a> for your Perusal
+        </p>
+      </div>
+    </section>
   </div>
-  
+</div>

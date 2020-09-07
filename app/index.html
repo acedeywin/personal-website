@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="eventsApp">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <base href="/" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Stephen Okpalaononuju</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="shortcut icon" type="image/png" href="../img/others/favicon.png">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../img/others/favicon.png"
+    />
+  </head>
 
-<body>
+  <body>
+    <div ng-view></div>
 
-  <div ng-view></div>
- 
     <script src="../scripts/angular/angular.js"></script>
     <script src="../scripts/angular/angular-resource.js"></script>
     <script src="../scripts/angular/angular-route.js"></script>
@@ -22,9 +32,13 @@
     <script src="../scripts/controllers/maincontroller.js"></script>
     <script src="../scripts/controllers/maindata.js"></script>
     <script src="../scripts/directives/maindirective.js"></script>
-    <script>window.jQuery || document.write('<script src="../scripts/jquery-3.3.1.min.js"><\/script>')</script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../scripts/main.js"></script> 
-   
-</body>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="../scripts/jquery-3.3.1.min.js"><\/script>'
+        );
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../scripts/main.js"></script>
+  </body>
 </html>
