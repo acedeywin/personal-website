@@ -164,7 +164,7 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       picture: "/img/portfolio/todo.jpg",
       note:
         "Todo-list helps you balance and manage your daily task. Users can add and delete tasks as much as they want.",
-      ui: "https://hidden-brushlands-92586.herokuapp.com/todo",
+      ui: "https://pacific-oasis-65853.herokuapp.com/todo",
       repo: "https://github.com/acedeywin/todo-app",
     },
     {
