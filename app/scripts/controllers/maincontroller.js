@@ -51,7 +51,7 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
 
   $scope.gallery = [
     {
-      status: "Before",
+      status: "",
       position: "move-in-left",
       column: "col-1-of-2",
       mainClass: "photo",
@@ -67,7 +67,7 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       class5: "photo__design photo__design--p6",
     },
     {
-      status: "After",
+      status: "",
       position: "move-in-right",
       column: "col-1-of-2",
       mainClass: "photo",
@@ -105,6 +105,30 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
 
   $scope.firstRow = [
     {
+      header: "Ristorante Con Fusion",
+      tech1: "HTMLS5 | CSS3",
+      tech2: "JavaScript | Bootstrap 4",
+      tech3: "React | Redux",
+      tech4: "NodeJS",
+      picture: "/img/portfolio/confusion.jpg",
+      note:
+        "Ristorante Con Fusion is a full-stack web development specialization project with React that teaches complete web and hybrid mobile solutions. The course covers topics on Bootstrap 4, React, React Native, NodeJS, etc.",
+      ui: "https://sheltered-brook-19690.herokuapp.com/",
+      repo: "https://github.com/acedeywin/confusion",
+    },
+    {
+      header: "Pix Selector",
+      tech1: "HTMLS5 | CSS3",
+      tech2: "JavaScript | React",
+      tech3: "Bootstrap 4 | Tailwind",
+      tech4: "NodeJS",
+      picture: "/img/portfolio/random.jpg",
+      note:
+        "Pix Selector randomly select pictures from an API and display the data individually.",
+      ui: "https://limitless-refuge-98705.herokuapp.com/",
+      repo: "https://github.com/acedeywin/react-app",
+    },
+    {
       header: "Banka Banking App",
       tech1: "HTMLS5 | CSS3",
       tech2: "JavaScript | JQuery",
@@ -116,6 +140,9 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       ui: "https://acedeywin.github.io/Banka-project",
       repo: "https://github.com/acedeywin/Banka-project",
     },
+  ];
+
+  $scope.secondRow = [
     {
       header: "Personal Website",
       tech1: "HTMLS5 | CSS3",
@@ -125,7 +152,7 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       picture: "/img/portfolio/new-website.jpg",
       note:
         "Well, you are already here. Just make sure you navigate the site enough time to allow you view all the awesome stuff that I have done. Enjoy!",
-      ui: "https://salty-refuge-65598.herokuapp.com/",
+      ui: "https://stephen-okpala.herokuapp.com/",
       repo: "https://github.com/acedeywin/personal-website",
     },
     {
@@ -140,9 +167,6 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       ui: "https://hidden-brushlands-92586.herokuapp.com/todo",
       repo: "https://github.com/acedeywin/todo-app",
     },
-  ];
-
-  $scope.secondRow = [
     {
       header: "Armstrong Number Checker",
       tech1: "HTMLS5",
@@ -155,6 +179,9 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       ui: "https://acedeywin.github.io/Armstrong-number-checker/",
       repo: "https://github.com/acedeywin/Armstrong-number-checker",
     },
+  ];
+
+  $scope.thirdRow = [
     {
       header: "Currency Converter",
       tech1: "HTMLS5",
@@ -179,9 +206,6 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       ui: "https://acedeywin.github.io/bmi-calculator/",
       repo: "https://github.com/acedeywin/bmi-calculator",
     },
-  ];
-
-  $scope.thirdRow = [
     {
       header: "Macauley Institute Web Prototype",
       tech1: "HTMLS5",
@@ -194,6 +218,9 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       ui: "https://acedeywin.github.io/themacinstitute/",
       repo: "https://github.com/acedeywin/themacinstitute",
     },
+  ];
+
+  $scope.fourthRow = [
     {
       header: "Shortest Path Game",
       tech1: "HTMLS5",

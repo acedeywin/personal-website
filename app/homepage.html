@@ -32,15 +32,21 @@
   </div>
   <!--Navbar ends here-->
 
-  <div class="header__screen-text">
-    <h1 class="name">
-      <span class="name--main">{{event.fullname}}</span>
-      <span class="name--sub"
-        ><img ng-src="{{event.nigerianFlag}}" class="flag" alt="flag" />
-        {{event.subname}}
-        <img ng-src="{{event.rastaFlag}}" class="flag" alt="flag"
-      /></span>
-    </h1>
+  <div class="container">
+    <div row="row row-container">
+      <div class="col-12 col-md">
+        <div class="header__screen-text">
+          <h1 class="name">
+            <span class="name--main">{{event.fullname}}</span>
+            <span class="name--sub"
+              ><img ng-src="{{event.nigerianFlag}}" class="flag" alt="flag" />
+              {{event.subname}}
+              <img ng-src="{{event.rastaFlag}}" class="flag" alt="flag"
+            /></span>
+          </h1>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="icons">
