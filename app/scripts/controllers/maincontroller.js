@@ -129,16 +129,16 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       repo: "https://github.com/acedeywin/react-app",
     },
     {
-      header: "Banka Banking App",
-      tech1: "HTMLS5 | CSS3",
-      tech2: "JavaScript | JQuery",
-      tech3: "NodeJS | ExpressJS",
-      tech4: "PostgreSQL",
-      picture: "/img/portfolio/banka.jpg",
+      header: "Pizza App",
+      tech1: "HTML | CSS3",
+      tech2: "PHP",
+      tech3: "Matrializecss",
+      tech4: "MySQL",
+      picture: "/img/portfolio/pizza.jpg",
       note:
-        "Banka is a light-weight core banking application that powers banking operations like account creation, customer deposit and withdrawals.",
-      ui: "https://acedeywin.github.io/Banka-project",
-      repo: "https://github.com/acedeywin/Banka-project",
+        "Pizza app is a CRUD app that supports features such as adding a pizza menu, viewing individual menu details, and deleting a menu from the database.",
+      ui: "http://acepizza.000webhostapp.com",
+      repo: "https://github.com/acedeywin/pizza-app",
     },
   ];
 
@@ -168,6 +168,21 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       repo: "https://github.com/acedeywin/todo-app",
     },
     {
+      header: "Banka Banking App",
+      tech1: "HTMLS5 | CSS3",
+      tech2: "JavaScript | JQuery",
+      tech3: "NodeJS | ExpressJS",
+      tech4: "PostgreSQL",
+      picture: "/img/portfolio/banka.jpg",
+      note:
+        "Banka is a light-weight core banking application that powers banking operations like account creation, customer deposit and withdrawals.",
+      ui: "https://acedeywin.github.io/Banka-project",
+      repo: "https://github.com/acedeywin/Banka-project",
+    },
+  ];
+
+  $scope.thirdRow = [
+    {
       header: "Armstrong Number Checker",
       tech1: "HTMLS5",
       tech2: "CSS3",
@@ -179,9 +194,6 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       ui: "https://acedeywin.github.io/Armstrong-number-checker/",
       repo: "https://github.com/acedeywin/Armstrong-number-checker",
     },
-  ];
-
-  $scope.thirdRow = [
     {
       header: "Currency Converter",
       tech1: "HTMLS5",
@@ -206,18 +218,6 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       ui: "https://acedeywin.github.io/bmi-calculator/",
       repo: "https://github.com/acedeywin/bmi-calculator",
     },
-    {
-      header: "Macauley Institute Web Prototype",
-      tech1: "HTMLS5",
-      tech2: "CSS3",
-      tech3: "JavaScript",
-      tech4: "Bootstrap4",
-      picture: "/img/portfolio/macinstitute.jpg",
-      note:
-        "This was the first prototype website developed for the Macauley Institute for Research, a former employer of mine where I worked as a Research Assistant and doubled as a Webmaster.",
-      ui: "https://acedeywin.github.io/themacinstitute/",
-      repo: "https://github.com/acedeywin/themacinstitute",
-    },
   ];
 
   $scope.fourthRow = [
@@ -232,6 +232,18 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
         "Shortest path game shows the shortest path to Matt’s house. The world is given to you as a comma-delimited string which represents the cells in the world from top-left to bottom-right.",
       ui: "https://acedeywin.github.io/shortest-path-game/",
       repo: "https://github.com/acedeywin/shortest-path-game",
+    },
+    {
+      header: "Macauley Institute Web Prototype",
+      tech1: "HTMLS5",
+      tech2: "CSS3",
+      tech3: "JavaScript",
+      tech4: "Bootstrap4",
+      picture: "/img/portfolio/macinstitute.jpg",
+      note:
+        "This was the first prototype website developed for the Macauley Institute for Research, a former employer of mine where I worked as a Research Assistant and doubled as a Webmaster.",
+      ui: "https://acedeywin.github.io/themacinstitute/",
+      repo: "https://github.com/acedeywin/themacinstitute",
     },
     {
       header: "WebGL Technical Documentation",
