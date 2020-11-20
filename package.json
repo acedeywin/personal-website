@@ -4,7 +4,8 @@
   "description": "my personal website",
   "main": "web-server/app.js",
   "scripts": {
-    "compile:sass": "node-sass sass/style.scss css/style.css"
+    "compile:sass": "node-sass sass/style.scss css/style.css",
+    "start": "nodemon web-server/app.js"
   },
   "keywords": [
     "heroku"
@@ -29,7 +30,8 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "live-server": "^1.2.1",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.11.0",
+    "nodemon": "^2.0.6"
   },
   "engines": {
     "node": "10.15.3"

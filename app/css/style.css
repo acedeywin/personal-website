@@ -54,7 +54,9 @@
     transform: translate(0); } }
 
 /*font-family: 'Indie Flower', cursive; font-family: 'Mali', cursive; 'Gloria Hallelujah', cursive*/
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: inherit; }
@@ -81,7 +83,7 @@ a:hover {
   color: #f2f2f2; }
 
 body {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
   font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1.7;
@@ -148,6 +150,13 @@ body {
   text-transform: uppercase;
   backface-visibility: hidden;
   text-align: center; }
+  @media (max-width: 56.25em) {
+    .name {
+      margin-top: -20rem;
+      margin-left: -7rem; } }
+  @media (max-width: 37.5em) {
+    .name {
+      margin-left: -3.5rem; } }
   .name--main {
     display: block;
     font-size: 5rem;
@@ -155,17 +164,20 @@ body {
     animation: moveInRotate 2s ease-out; }
     @media (max-width: 37.5em) {
       .name--main {
-        font-size: 3.2rem; } }
+        font-size: 2rem; } }
   .name--sub {
     display: block;
     font-size: 1.7rem;
     font-weight: 700;
-    letter-spacing: .68rem;
+    letter-spacing: 0.68rem;
     animation: moveInRight 2s ease-out; }
     @media (max-width: 37.5em) {
       .name--sub {
-        font-size: 1rem;
-        letter-spacing: .43rem; } }
+        font-size: 0.7rem;
+        letter-spacing: 0.1rem; } }
+    @media (max-width: 49.875em) {
+      .name--sub {
+        letter-spacing: 0.6rem; } }
 
 .row {
   max-width: 114rem;
