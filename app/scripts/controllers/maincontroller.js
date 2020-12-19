@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
 
 eventsApp.controller("maincontroller", function maincontroller($scope) {
   //Home Page
@@ -9,9 +9,9 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
     miniLogo: "/img/others/favicon.png",
     nigerianFlag: "/img/others/naija.gif",
     rastaFlag: "/img/others/rasta.png",
-  };
+  }
 
-  $scope.date = new Date();
+  $scope.date = new Date()
 
   $scope.navBar = [
     {
@@ -28,6 +28,7 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       title: "Curriculum Vitae",
       link: "http://acedeywin.github.io/my-cv",
       class: "navigation__link link user-acct",
+      target: "blank",
     },
     {
       title: "Porfolio",
@@ -35,19 +36,20 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       class: "navigation__link link user-acct",
     },
     {
-      title: "Gallery",
-      link: "gallery",
+      title: "GitHub",
+      link: "https://github.com/acedeywin",
       class: "navigation__link link user-acct",
+      target: "blank",
     },
     {
-      title: "Contact",
-      link: "contact",
+      title: "Contact Me",
+      link: "mailto:stephenokpala@gmail.com",
       class: "navigation__link link user-acct",
     },
-  ];
+  ]
 
   //Gallery Page
-  $scope.galleryName = "Picture Gallery";
+  $scope.galleryName = "Picture Gallery"
 
   $scope.gallery = [
     {
@@ -84,7 +86,7 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       class5: "photo__design photo__design--p6",
       class6: "photo__design photo__design--p7",
     },
-  ];
+  ]
 
   //About Page
   $scope.about = {
@@ -98,18 +100,30 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
 
     profile3:
       "Stephen has keen interests in Human-Computer interactions, Software Development, Behavioral Research, and Program/Project management. He also likes to read, exercise, listen to good music, watch football (soccer), and surf the Internet. And of course, he is a Madridista  and a foodie!",
-  };
+  }
 
   //Details for Portfolio Page
-  $scope.portfolioName = "Portfolio";
+  $scope.portfolioName = "Portfolio"
 
   $scope.firstRow = [
+    {
+      header: "RedditClone",
+      tech1: "React | NextJs | Chakra-UI",
+      tech2: "Urql Client | TypeOrm | JavaScript",
+      tech3: "GraphQL | TypeGrapQL | TypeScript",
+      tech4: "NodeJS | Postgresql | Redis",
+      picture: "/img/portfolio/reddit.jpg",
+      note:
+        "RedditClone app allows authenticated users to add, edit, vote, and delete posts. The code was written mainly using TypeScript",
+      ui: "https://github.com/acedeywin/reddit-clone-client#how-to-use",
+      repo: "https://github.com/acedeywin/reddit-clone-server",
+    },
     {
       header: "Ristorante Con Fusion",
       tech1: "HTMLS5 | CSS3",
       tech2: "JavaScript | Bootstrap 4",
       tech3: "React | Redux",
-      tech4: "NodeJS",
+      tech4: "NodeJS | MongoDB",
       picture: "/img/portfolio/confusion.jpg",
       note:
         "Ristorante Con Fusion is a full-stack web development specialization project with React that teaches complete web and hybrid mobile solutions. The course covers topics on Bootstrap 4, React, React Native, NodeJS, etc.",
@@ -120,14 +134,17 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       header: "Hackernews Clone",
       tech1: "TypeScript",
       tech2: "JavaScript | React",
-      tech3: "GraphQL | Prisma",
-      tech4: "NodeJS",
+      tech3: "Apollo Client | Prisma",
+      tech4: "NodeJS | Graphql",
       picture: "/img/portfolio/hackernews.jpg",
       note:
         "This is a clone of Hackernews where users can get authenticated, create new links, upvote links, and see realtime updates from other users.",
       ui: "https://affectionate-bell-bbcebd.netlify.app",
       repo: "https://github.com/acedeywin/hackernews-clone",
     },
+  ]
+
+  $scope.secondRow = [
     {
       header: "Pizza App",
       tech1: "HTML | CSS3",
@@ -139,21 +156,6 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
         "Pizza app is a CRUD app that supports features such as adding a pizza menu, viewing individual menu details, and deleting a menu from the database.",
       ui: "http://acepizza.000webhostapp.com",
       repo: "https://github.com/acedeywin/pizza-app",
-    },
-  ];
-
-  $scope.secondRow = [
-    {
-      header: "Personal Website",
-      tech1: "HTMLS5 | CSS3",
-      tech2: "JavaScript",
-      tech3: "NodeJS | ExpressJS",
-      tech4: "AngularJS | SASS",
-      picture: "/img/portfolio/new-website.jpg",
-      note:
-        "Well, you are already here. Just make sure you navigate the site enough time to allow you view all the awesome stuff that I have done. Enjoy!",
-      ui: "https://stephen-okpala.herokuapp.com/",
-      repo: "https://github.com/acedeywin/personal-website",
     },
     {
       header: "Pix Selector",
@@ -179,9 +181,21 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       ui: "https://acedeywin.github.io/Banka-project",
       repo: "https://github.com/acedeywin/Banka-project",
     },
-  ];
+  ]
 
   $scope.thirdRow = [
+    {
+      header: "Personal Website",
+      tech1: "HTMLS5 | CSS3",
+      tech2: "JavaScript",
+      tech3: "NodeJS | ExpressJS",
+      tech4: "AngularJS | SASS",
+      picture: "/img/portfolio/new-website.jpg",
+      note:
+        "Well, you are already here. Just make sure you navigate the site enough time to allow you view all the awesome stuff that I have done. Enjoy!",
+      ui: "https://stephen-okpala.herokuapp.com/",
+      repo: "https://github.com/acedeywin/personal-website",
+    },
     {
       header: "Armstrong Number Checker",
       tech1: "HTMLS5",
@@ -206,19 +220,7 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       ui: "https://acedeywin.github.io/gandollarz/",
       repo: "https://github.com/acedeywin/gandollarz",
     },
-    {
-      header: "BMI Calculator",
-      tech1: "HTMLS5",
-      tech2: "CSS3",
-      tech3: "JavaScript",
-      tech4: "",
-      picture: "/img/portfolio/bmi.jpg",
-      note:
-        "The BMI calculator calculates your body mass index using your mass (weight) and height. The BMI is defined as the body mass divided by the square of the body height.",
-      ui: "https://acedeywin.github.io/bmi-calculator/",
-      repo: "https://github.com/acedeywin/bmi-calculator",
-    },
-  ];
+  ]
 
   $scope.fourthRow = [
     {
@@ -234,16 +236,16 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       repo: "https://github.com/acedeywin/shortest-path-game",
     },
     {
-      header: "Macauley Institute Web Prototype",
+      header: "BMI Calculator",
       tech1: "HTMLS5",
       tech2: "CSS3",
       tech3: "JavaScript",
-      tech4: "Bootstrap4",
-      picture: "/img/portfolio/macinstitute.jpg",
+      tech4: "",
+      picture: "/img/portfolio/bmi.jpg",
       note:
-        "This was the first prototype website developed for the Macauley Institute for Research, a former employer of mine where I worked as a Research Assistant and doubled as a Webmaster.",
-      ui: "https://acedeywin.github.io/themacinstitute/",
-      repo: "https://github.com/acedeywin/themacinstitute",
+        "The BMI calculator calculates your body mass index using your mass (weight) and height. The BMI is defined as the body mass divided by the square of the body height.",
+      ui: "https://acedeywin.github.io/bmi-calculator/",
+      repo: "https://github.com/acedeywin/bmi-calculator",
     },
     {
       header: "WebGL Technical Documentation",
@@ -256,7 +258,7 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       ui: "https://acedeywin.github.io/td-page/",
       repo: "https://github.com/acedeywin/td-page",
     },
-  ];
+  ]
 
   $scope.footer = [
     {
@@ -279,5 +281,5 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       link: "https://www.linkedin.com/in/stevon04",
       class: "fa fa-linkedin",
     },
-  ];
-});
+  ]
+})
