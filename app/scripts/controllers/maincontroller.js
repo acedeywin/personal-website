@@ -4,7 +4,7 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
   //Home Page
   $scope.event = {
     fullname: "Okpalaononuju Stephen Ifeamarame",
-    subname: "Nigerian | Designer | Developer | True Africa Believer",
+    subname: "Igbo | Nigerian | Software Developer | True Africa Believer",
     logoImgUrl: "/img/others/web-logo.png",
     miniLogo: "/img/others/favicon.png",
     nigerianFlag: "/img/others/naija.gif",
@@ -34,6 +34,12 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       title: "Porfolio",
       link: "portfolio",
       class: "navigation__link link user-acct",
+    },
+    {
+      title: "Medium",
+      link: "https://acedeywin.medium.com/",
+      class: "navigation__link link user-acct",
+      target: "blank",
     },
     {
       title: "GitHub",
@@ -93,13 +99,13 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
     name: "About",
 
     profile1:
-      "Stephen holds a bachelor of science degree in psychology from Nnamdi Azikiwe University, Awka and a masters degree in development studies from Federal University Dustin-ma, with three years of work experience in app design & development where he hopes to positively enhance people’s experience online and make the web a better place. He also has two years experience as a research assistant where he supported research, project planning & implementation, monitoring & evaluation, office administration, logistics, and coordinated with multiple stakeholders to meet project/grant objectives. Before his engagement with the Institute, he was involved in training/research & development in a technology firm where he brought innovative ideas and researched on contemporary technologies that helped develop the organization.",
+      "Stephen holds a bachelor of science degree in psychology from Nnamdi Azikiwe University, Awka and a masters degree in development studies from Federal University Dustin-ma, with more than three years of work experience in software development where he hopes to positively enhance people’s experience online and make the web a better place. Stephen currently works as a software developer/software tester with a consulting firm where he develops, test, and implement new/existing software programs. Before his current engagement, he has worked as a freelance software developer, research assistant, as well as in training/research & development where he brought innovative ideas and researched on contemporary technologies.",
 
     profile2:
       "Stephen is gifted in being analytical, investigative and questioning. He loves to analyze and investigate, exploring data and information. He can quickly identify the key points, even in the most complex scenarios, offer others insight and clarity, and uses his strength to simplify and solve complex problems. Stephen is also gifted in being driven, determined and ambitious. He is a driven individual with limitless motivation, always focused on achieving his goals, and consistently delivers great work, regardless of the pressure.",
 
     profile3:
-      "Stephen has keen interests in Human-Computer interactions, Software Development, Behavioral Research, and Program/Project management. He also likes to read, exercise, listen to good music, watch football (soccer), and surf the Internet. And of course, he is a Madridista  and a foodie!",
+      "Stephen has keen interests in Human-Computer interactions, Design, artificial intelligence, etc. He also likes to read, exercise, listen to good music, watch football (soccer), and surf the Internet. And of course, he is a Madridista  and a foodie!",
   }
 
   //Details for Portfolio Page
