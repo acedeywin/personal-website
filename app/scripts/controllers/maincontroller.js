@@ -121,7 +121,7 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       picture: "/img/portfolio/reddit.jpg",
       note:
         "RedditClone app allows authenticated users to add, edit, vote, and delete posts. The code was written mainly using TypeScript",
-      ui: "https://github.com/acedeywin/reddit-clone-client#how-to-use",
+      ui: "https://warm-lowlands-62419.herokuapp.com",
       repo: "https://github.com/acedeywin/reddit-clone-server",
     },
     {
