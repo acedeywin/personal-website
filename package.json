@@ -16,7 +16,7 @@
     "body-parser": "^1.18.3",
     "browserslist": "^4.7.2",
     "caniuse-lite": "^1.0.30001008",
-    "express": "^4.16.4"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.10",
