@@ -100,7 +100,7 @@ body {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(to left bottom, rgba(128, 128, 128, 0.7), rgba(242, 242, 242, 0.7)), url(../img/old/steve.jpg);
+  background-image: linear-gradient(to left bottom, rgba(128, 128, 128, 0.3), rgba(242, 242, 242, 0.3)), url(../img/old/new-profile-img-2.jpg);
   background-size: cover;
   background-position: center;
   position: relative; }
@@ -335,7 +335,7 @@ body {
 
 .portfolio {
   height: auto;
-  background-image: linear-gradient(to left bottom, rgba(128, 128, 128, 0.7), rgba(242, 242, 242, 0.7)), url(../img/old/steve.jpg);
+  background-image: linear-gradient(to left bottom, rgba(128, 128, 128, 0.7), rgba(242, 242, 242, 0.7)), url(../img/old/new-profile-img-2.jpg);
   background-size: cover;
   background-position: center;
   position: relative; }
@@ -478,7 +478,7 @@ body {
   top: -2rem; }
 
 .menu .bar::after {
-  top: 2rem; }
+  top: 1rem; }
 
 .active .bar {
   background-color: transparent; }

@@ -4,7 +4,7 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
   //Home Page
   $scope.event = {
     fullname: "Okpalaononuju Stephen Ifeamarame",
-    subname: "Igbo | Nigerian | Software Developer | True Africa Believer",
+    subname: "SOFTWARE DEVELOPER | IT PROFESSIONAL | TECH WRITER",
     logoImgUrl: "/img/others/web-logo.png",
     miniLogo: "/img/others/favicon.png",
     nigerianFlag: "/img/others/naija.gif",
@@ -16,7 +16,7 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
   $scope.navBar = [
     {
       title: "Home",
-      link: "homepage",
+      link: "/homepage",
       class: "navigation__link link user-acct",
     },
     {
@@ -25,15 +25,15 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       class: "navigation__link link user-acct",
     },
     {
-      title: "Curriculum Vitae",
-      link: "http://acedeywin.github.io/my-cv",
-      class: "navigation__link link user-acct",
-      target: "blank",
-    },
-    {
       title: "Porfolio",
       link: "portfolio",
       class: "navigation__link link user-acct",
+    },
+    {
+      title: "Resume",
+      link: "https://drive.google.com/file/d/1eHhp_pIWsY6RnMzTHQfYUcgqGDmvkPmY/view?usp=drive_link",
+      class: "navigation__link link user-acct",
+      target: "blank",
     },
     {
       title: "Medium",
@@ -99,17 +99,56 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
     name: "About",
 
     profile1:
-      "Stephen holds a bachelor of science degree in psychology from Nnamdi Azikiwe University, Awka and a masters degree in development studies from Federal University Dustin-ma, with more than three years of work experience in software development where he hopes to positively enhance people’s experience online and make the web a better place. Stephen currently works as a software developer/software tester with a consulting firm where he develops, test, and implement new/existing software programs. Before his current engagement, he has worked as a freelance software developer, research assistant, as well as in training/research & development where he brought innovative ideas and researched on contemporary technologies.",
+      "With over five years of hands-on development experience building SaaS products, I specialize in creating robust applications using React and Node.js. My recent work includes designing a modern, open-source contact centre platform for crisis helplines. With solid skills in JavaScript/TypeScript and databases like PostgreSQL, MySQL, and MongoDB, I am adept at working in diverse global teams. I am excited about contributing my expertise to a dynamic company, helping drive innovation and success with a collaborative and results-oriented approach.",
 
     profile2:
-      "Stephen is gifted in being analytical, investigative and questioning. He loves to analyze and investigate, exploring data and information. He can quickly identify the key points, even in the most complex scenarios, offer others insight and clarity, and uses his strength to simplify and solve complex problems. Stephen is also gifted in being driven, determined and ambitious. He is a driven individual with limitless motivation, always focused on achieving his goals, and consistently delivers great work, regardless of the pressure.",
+      "I have worked extensively in software consulting, where I collaborated to build apps ranging from enterprise expense management software to e-commerce web apps, fintech applications, restaurant booking and rating software, etc. I also have experience in the Nonprofit space, where I worked on an open-source contact centre platform based on Twilio's Flex technology that unifies the communications work of crisis response helplines.",
 
     profile3:
-      "Stephen has keen interests in Human-Computer interactions, Design, artificial intelligence, etc. He also likes to read, exercise, listen to good music, watch football (soccer), and surf the Internet. And of course, he is a Madridista  and a foodie!",
+      "I have keen interests in Human-Computer Interaction, Tech for Good, Blockchain Technology, and Artificial Intelligence. I am a Madridista. I like food and trying out different delicacies. Recently, I have become more of a gym and fitness believer. I strongly believe that working your body helps keep your mind strong.",
   }
 
   //Details for Portfolio Page
   $scope.portfolioName = "Portfolio"
+
+  $scope.firstNewRow = [
+    {
+      header: "Alpha Vantage Stock",
+      tech1: "React | Redux | Tailwind CSS",
+      tech2: "TypeScript",
+      tech3: "Alpha Vantage Stock API",
+      tech4: "NodeJS",
+      picture: "/img/portfolio/alpha-vantage-stock.png",
+      note:
+        "A React App that where users can search for a stock based on different time series.",
+      ui: "https://alpha-vantage-stock-data.netlify.app",
+      repo: "https://github.com/acedeywin/alpha-vantage-stock",
+    },
+    {
+      header: "AI Text Analysis",
+      tech1: "Next.js | Redux | Tailwind CSS",
+      tech2: "TypScript | Python",
+      tech3: "LLM | Llama 3.1 | Groq",
+      tech4: "NodeJS | FastAPI | Docker",
+      picture: "/img/portfolio/project-gutenberg.png",
+      note:
+        "A web application that allow users to explore and analyze books from Project Gutenberg.",
+      ui: "https://project-gutenberg-api-j6r9.vercel.app/",
+      repo: "https://github.com/acedeywin/project-gutenberg-client",
+      repo2: "https://github.com/acedeywin/project-gutenberg-api",
+    },
+    {
+      header: "Demo Credit API",
+      tech1: "TypeScript",
+      tech2: "Lendsqr Adjutor API",
+      tech3: "MySQL | Knex.js",
+      tech4: "NodeJS | Jest | Docker",
+      picture: "/img/portfolio/demo-credit.png",
+      note:
+        "A backend API for managing user accounts and transactions for a lending platform.",
+      repo2: "https://github.com/acedeywin/demo-credit-api",
+    },
+  ]
 
   $scope.firstRow = [
     {
@@ -199,7 +238,7 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
       picture: "/img/portfolio/new-website.jpg",
       note:
         "Well, you are already here. Just make sure you navigate the site enough time to allow you view all the awesome stuff that I have done. Enjoy!",
-      ui: "https://stephen-okpala.herokuapp.com/",
+      ui: "https://stephen-okpala-77334370365.us-central1.run.app/",
       repo: "https://github.com/acedeywin/personal-website",
     },
     {
@@ -267,24 +306,24 @@ eventsApp.controller("maincontroller", function maincontroller($scope) {
   ]
 
   $scope.footer = [
-    {
-      link: "https://www.facebook.com/stephen.okpala.04",
-      class: "fa fa-facebook-official",
-    },
-    {
-      link: "https://www.instagram.com/acedeywin",
-      class: "fa fa-instagram",
-    },
+    // {
+    //   link: "https://www.facebook.com/stephen.okpala.04",
+    //   class: "fa fa-facebook-official",
+    // },
+    // {
+    //   link: "https://www.instagram.com/acedeywin",
+    //   class: "fa fa-instagram",
+    // },
     {
       link: "https://www.github.com/acedeywin",
       class: "fa fa-github",
     },
+    // {
+    //   link: "https://www.twitter.com/acedeywinn",
+    //   class: "fa fa-twitter",
+    // },
     {
-      link: "https://www.twitter.com/acedeywinn",
-      class: "fa fa-twitter",
-    },
-    {
-      link: "https://www.linkedin.com/in/stevon04",
+      link: "https://www.linkedin.com/in/acedeywin",
       class: "fa fa-linkedin",
     },
   ]

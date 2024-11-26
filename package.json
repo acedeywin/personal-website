@@ -5,7 +5,8 @@
   "main": "web-server/app.js",
   "scripts": {
     "compile:sass": "node-sass sass/style.scss css/style.css",
-    "start": "nodemon web-server/app.js"
+    "dev": "nodemon web-server/app.js",
+    "start": "node web-server/app.js"
   },
   "keywords": [
     "heroku"
@@ -14,14 +15,14 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "browserslist": "^4.7.2",
+    "browserslist": "^4.16.5",
     "caniuse-lite": "^1.0.30001008",
-    "express": "^4.16.4"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.10",
     "bootstrap": "^4.5.2",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "gulp": "^4.0.0",
     "gulp-clean-css": "^4.0.0",
     "gulp-cli": "^2.0.1",
@@ -34,6 +35,6 @@
     "nodemon": "^2.0.6"
   },
   "engines": {
-    "node": "10.15.3"
+    "node": "v10.24.1"
   }
 }
