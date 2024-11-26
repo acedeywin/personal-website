@@ -4,3 +4,9 @@ app/debug.log
 app/archives/
 web-server/npm-debug.log
 debug.log
+
+.env
+
+# For GCR deployment
+cloudbuild.yaml
+gcr-service-policy.yaml

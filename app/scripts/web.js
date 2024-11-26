@@ -4,7 +4,7 @@ var eventsApp = angular.module("eventsApp", ["ngRoute"]);
 
 eventsApp.config(function ($routeProvider, $locationProvider) {
   $routeProvider
-    .when("/homepage", {
+    .when("/", {
       templateUrl: "homepage.html",
       controller: "maincontroller",
     })
@@ -24,6 +24,6 @@ eventsApp.config(function ($routeProvider, $locationProvider) {
       templateUrl: "contact.html",
       controller: "maincontroller",
     })
-    .otherwise({ redirectTo: "/homepage" });
+    .otherwise({ redirectTo: "/" });
   $locationProvider.html5Mode(true);
 });

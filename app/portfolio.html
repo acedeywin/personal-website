@@ -38,6 +38,65 @@
         <h2 class="heading-general">{{portfolioName}}</h2>
       </div>
 
+       <!-- new first row starts here-->
+       <div class="row">
+        <div ng-repeat="item in firstNewRow" class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <img
+                class="card__picture"
+                ng-src="{{item.picture}}"
+                alt="Image"
+              />
+              <h4 class="card__heading">
+                <span
+                  ng-bind="item.header"
+                  class="card__heading-span card__heading-span--1"
+                ></span>
+              </h4>
+              <div class="card__details">
+                <ul>
+                  <li ng-bind="item.tech1"></li>
+                  <li ng-bind="item.tech2"></li>
+                  <li ng-bind="item.tech3"></li>
+                  <li ng-bind="item.tech4"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-1">
+              <div class="card__cta">
+                <div class="card__note-box">
+                  <p class="card__note-info" ng-bind="item.note"></p>
+                </div>
+                <a
+                 ng-if="item.ui"
+                  href="{{item.ui}}"
+                  class="btn btn--white card__ui"
+                  target="blank"
+                  >View UI</a
+                >
+                <a
+                ng-if="item.repo"
+                  href="{{item.repo}}"
+                  class="btn btn--white card__ui"
+                  target="blank"
+                  >View Repo</a
+                >
+                <a
+                style="margin-top: 20px;"
+                ng-if="item.repo2"
+                href="{{item.repo2}}"
+                  class="btn btn--white card__ui"
+                  target="blank"
+                  >View API Repo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- new first row ends here -->
+
       <!-- first row starts here-->
       <div class="row">
         <div ng-repeat="item in firstRow" class="col-1-of-3">
